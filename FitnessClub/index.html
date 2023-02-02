@@ -3,37 +3,46 @@
 <head>
     <meta charset="utf-8">
 	<title> Forward Fitness Club Website </title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-	
-	<header>
-		<h1>Forward Fitness Club</h1>
-	</header>
-    
-    <!-- The nav shows the links to other pages of my website -->
-    <nav>
-        <p>
-            Home &nbsp; &#9475; &nbsp;
-            About Us &nbsp; &#9475; &nbsp;
-            Classes &nbsp; &#9475; &nbsp;
-            Nutrition &nbsp; &#9475; &nbsp;
-            Contact Us
-        </p>
-    </nav>
-    <main>
-        <p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition goals. </p>
-
-        <p>If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
-
-        <p>We provide a FREE one-week membership so you can experience the benefits of our equipment and facility. This one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to start your free trial!</p>
+	<div id="container">
+        <header>
+            <h1>Forward Fitness Club</h1>
+            <a href="index.html"><img src="images/forward-fitness-logo.png" 
+                alt="Forward Fitness Club logo"></a>
+        </header>
         
-    </main>
-	<footer>
-		<p> &copy; Copyright 2023. All Rights Reserved.</p>
-        <p>forwardfitness@club.net</p>
-		<p><a href="https://drspreston.github.io/webdev23/" title="Webdev Homepage link">Webdev Homepage</a></p>
-	</footer>
-	
+        <!-- The nav shows the links to other pages of my website -->
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Fitness Home">Home</a></li>
+                <li><a href="about.html" title="About Foward Fitness">About Us</a></li>
+                <li><a href="classes.html" title="Fitness Classes">Classes</a></li>
+                <li><a href="nutrition.html" title="Fitness Nutrition">Nutrition</a></li>
+                <li><a href="contact.html" title="Contact Foward Fitness">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Image -->
+        <div id="hero">
+            <img src="images/hero-image.jpg" alt="left arm extended holding a weight">
+        </div>
+
+        <main>
+            <p>Welcome to Forward Fitness Club. Our mission is to help our clients meet their fitness and nutrition goals. </p>
+
+            <p>If you have struggled with getting healthy and need the motivation and resources to make a healthy lifestyle change, contact us today. Our facility includes state-of-the-art equipment, convenient group training classes, and nutrition tips and information to keep you healthy.</p>
+
+            <p>We provide a FREE one-week membership so you can experience the benefits of our equipment and facility. This one-week trial gives you complete access to our equipment, training classes, and nutrition planning. Contact us today to start your free trial!</p>
+            
+        </main>
+        <footer>
+            <p> &copy; Copyright 2023. All Rights Reserved.</p>
+            <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+        <p><a href="https://drspreston.github.io/webdev23/" title="Webdev Homepage link">Webdev Homepage</a></p>
+        </footer>
+    </div> <!-- end of div container -->
 </body>
 </html>
