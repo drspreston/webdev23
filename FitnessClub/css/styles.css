@@ -1,3 +1,4 @@
+/* Styles for all pages: body,  img, header, nav, main */
 body {
     background-color: #ccc;
 }
@@ -44,8 +45,15 @@ main{
     font-size: 1.25em;
 }
 
-#weigths, #cardio, #training
-{
+/* action class applied to index.html */
+.action{ 
+    font-size: 1.35em;
+    color: #666600;
+    font-weight: bold;
+}
+
+/*About us page styles */
+#weights, #cardio, #training{ 
     width: 29%;
     float: left;
     margin: 0 2%;
@@ -67,6 +75,27 @@ main{
     padding: 0.5% 1% 2% 0;
 }
 
+.external-link{
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contact page styles */
+#contact{
+    text-align: center;
+}
+
+#contact a{
+    color: #666600;
+    text-decoration: none;
+}
+
+.map{
+    border: 8px solid #000;
+}
+
+/* Footer styles for all pages */
 footer p {
     font-size: 0.75em;
     text-align: center;
@@ -78,4 +107,3 @@ footer p a {
     color: #fff;
     text-decoration: none;
 }
-
