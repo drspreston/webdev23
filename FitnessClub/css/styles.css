@@ -39,4 +39,43 @@ nav li a{
 
 main{
     clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
 }
+
+#weigths, #cardio, #training
+{
+    width: 29%;
+    float: left;
+    margin: 0 2%;
+}
+
+#exercises{
+    clear: left;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    background-color: #f2f2f2;
+    padding: 1% 2%;
+}
+
+#exercises dt{
+    font-weight: bold;
+}
+
+#exercises dd{
+    padding: 0.5% 1% 2% 0;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
