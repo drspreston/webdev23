@@ -1,0 +1,92 @@
+/*
+    Author: Silvia Preston
+    Date: 2/8/2023
+    Filename: style.css
+*/
+
+/*Reset CSS styles*/
+body, header, nav, main, footer, h1, div, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Styles for all pages: body,  img, header, nav, main */
+body {
+    background-color: #000;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+header{
+    width: 25%;
+    float: left;
+}
+
+nav{
+    width: 70%;
+    float: right;
+    margin: 5em 3em 0 0;
+}
+
+nav ul{
+    list-style-type: none; /*no bullet on my list items*/
+    margin: 0;
+    text-align: right;
+}
+
+nav li{
+    display: inline-block;
+    font-size: 1.75em;
+}
+
+nav li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 0.5em 1em; /*top-bottom: 0.5 em, left-right: 1em */
+    text-decoration: none; /*remove underline from link*/
+}
+
+main{
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size: 1.25em;
+}
+
+.external-link{
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contact page styles */
+#contact{
+    text-align: center;
+}
+
+#contact a{
+    color: #666600;
+    text-decoration: none;
+}
+
+.map{
+    border: 8px solid #000;
+}
+
+/* Footer styles for all pages */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
