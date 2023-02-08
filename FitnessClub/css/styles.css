@@ -1,6 +1,19 @@
-/* Styles for all pages: body,  img, header, nav, main */
+/*
+    Author: Silvia Preston
+    Date: 2/8/2023
+    Filename: style.css
+*/
+
+/*Reset CSS styles*/
+body, header, nav, main, footer, h1, div, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Styles for all pages: body, img, header, nav, main */
 body {
-    background-color: #ccc;
+    background-color: #000;
 }
 
 img{
@@ -13,6 +26,7 @@ header{
     float: left;
 }
 
+/* style rules for navigation area */
 nav{
     width: 70%;
     float: right;
@@ -27,7 +41,9 @@ nav ul{
 
 nav li{
     display: inline-block;
-    font-size: 1.75em;
+    font-size: 1.5em;
+    font-family: Verdana, Arial, sans-serif;
+    font-weight: bold;
 }
 
 nav li a{
