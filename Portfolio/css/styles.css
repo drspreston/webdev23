@@ -13,7 +13,7 @@ body, header, nav, main, footer, h1, div, img{
 
 /* Styles for all pages: body,  img, header, nav, main */
 body {
-    background-color: #000;
+    background-color: #000000;
 }
 
 img{
@@ -53,7 +53,7 @@ nav li a{
 
 main{
     clear: left;
-    background-color: #fff;
+    background-color: #f6d197;
     padding: 2%;
     font-size: 1.25em;
 }
