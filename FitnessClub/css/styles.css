@@ -53,20 +53,49 @@ nav li{
     border-top: 1px solid #ffffff;
 }
 
+nav li:first-child{
+    border-top: none;
+}
+
 nav li a{
     display: block;
     color: #fff;
-    text-align: center;
     padding: 0.5em 1em; /*top-bottom: 0.5 em, left-right: 1em */
     text-decoration: none; /*remove underline from link*/
 }
 
+/* Show mobile class, hide tablet-desktop class */
+.mobile{
+    display: block;
+}
+
+.tablet-desktop{
+    display: none;
+}
+
 main{
-    clear: left;
     background-color: #fff;
     padding: 2%;
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-family: "Roboto Slab", serif;
+}
+
+.tel-link{
+    background-color: #404040;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;    
+}
+
+.tel-link a{
+    text-decoration: none;
+    color: #666600;
+}
+
+.hours{
+    margin-left: 10%;
 }
 
 /* action class applied to index.html */
@@ -77,12 +106,51 @@ main{
 }
 
 /*About us page styles */
-#weights, #cardio, #training{ 
-    width: 29%;
-    float: left;
+#weights, #cardio, #training{     
     margin: 0 2%;
 }
 
+.round{
+    border-radius: 8px;
+}
+
+.external-link{
+    color: #666600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Contact page styles */
+#contact .contact-email-link{
+    color: #666600;
+    text-decoration: none;
+}
+
+#contact a{
+    color: #666600;
+    text-decoration: none;
+}
+
+.map{
+    border: 2px solid #000;
+    width: 95%;
+    height: 50%;
+}
+
+/* Footer styles for all pages */
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: #fff;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
 #exercises{
     clear: left;
     border-top: 1px solid #000;
@@ -98,36 +166,4 @@ main{
 #exercises dd{
     padding: 0.5% 1% 2% 0;
 }
-
-.external-link{
-    color: #666600;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Contact page styles */
-#contact{
-    text-align: center;
-}
-
-#contact a{
-    color: #666600;
-    text-decoration: none;
-}
-
-.map{
-    border: 8px solid #000;
-}
-
-/* Footer styles for all pages */
-footer p {
-    font-size: 0.75em;
-    text-align: center;
-    color: #fff;
-    padding: 0 1em;
-}
-
-footer p a {
-    color: #fff;
-    text-decoration: none;
-}
+*/
