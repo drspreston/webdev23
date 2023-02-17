@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+      JavaScript 7th Edition
+      Chapter 1
+      Hands-on Project 1-3
+
+      Author: 
+      Date:   
+
+      Filename: project01-03.html
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 1-3</title>
+   <link rel="stylesheet" href="css/styles.css" />
+   <script src="js/project01-04.js"></script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../../index.html" title="Homepage">Home</a></li>
+            <li><a href="../../projects.html" title="Projects">Hands On Projects</a></li>
+            <li><a href="../../caseProjects.html" title="Case Projects">Case Projects</a></li>
+        </ul>
+    </nav>
+     <header>
+        <h1>
+         Hands-on Project 1-4
+      </h1>
+    </header>
+    
+    <form>
+        <h2>Shipping Address</h2>
+       <fieldset id="addroptions">
+          <legend><span>Choose an address</span></legend>
+          <label for="homeoption" id="homeaddr">
+             <div>Home</div>
+             <script>
+                document.write(homeStreet + "<br>");
+                document.write(homeCity +", "+ homeState +" " + homeCode);
+             </script>
+             <input type="radio" id="homeoption" name="shippingaddr" onclick="document.getElementById('street').value = homeStreet; onclick=document.getElementById('city').value = homeCity;  onclick=document.getElementById('state').value = homeState; onclick=document.getElementById('code').value = homeCode;"/>
+          </label>
+          <label for="workoption" id="workaddr">
+             <div>Work</div>
+             <script>
+                document.write(workStreet + "<br>");
+                document.write(workCity +", "+ workState +" " + workCode);
+             </script>
+             <input type="radio" id="workoption" name="shippingaddr" onclick="document.getElementById('street').value = workStreet; onclick=document.getElementById('city').value = workCity;  onclick=document.getElementById('state').value = workState; onclick=document.getElementById('code').value = workCode;"/>
+          </label>
+       </fieldset>
+       
+        <fieldset id="contactinfo">
+          <label for="street">
+            Street Address
+            <input type="text" id="street" />
+          </label>
+          <label for="city">
+            City
+            <input type="text" id="city" />
+          </label>
+          <label for="state">
+            State
+            <input type="text" id="state" />
+          </label>
+          <label for="code">
+            Zip
+            <input type="text" id="code" />
+          </label>
+        </fieldset>       
+   </form>
+ </article>
+    <footer>
+    <p>Silvia Preston &copy; Copyright 2023. All Rights Reserved.</p>
+    <p><a href="mailto:spreston@prcc.edu" title="Email Me">spreston@prcc.edu</a></p>
+    <p><a href="https://drspreston.github.io/webdev23/" 
+        title="Webdev Homepage link">Webdev Homepage</a></p>
+</footer>
+</body>
+</html>
