@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+  }
+
+header{
+    color: darkolivegreen;
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #f6d197;
+}
+
+main{
+    clear: left;
+    padding: 2%;
+    font-size: 1.25em;
+}
+
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center; 
+    align-content: center;
+    justify-content: center;   
+  }
+
+  .flex-item {
+    background-color: #e9e3e8;
+    align-items: center;
+    padding: 10px;
+    /* flex: 50%; */
+    width: 50%;
+    margin: 10px;
+  }
+
+  p a{
+    text-decoration: none;
+    color: darkolivegreen;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item {
+      flex: 80%;
+    }
+  }
+
+footer{
+    background-color: #f6d197;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+footer p {
+    font-size: 0.75em;
+    text-align: center;
+    color: darkolivegreen;
+    padding: 0 1em;
+}
+
+footer p a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
