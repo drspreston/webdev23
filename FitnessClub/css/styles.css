@@ -150,20 +150,101 @@ footer p a {
     text-decoration: none;
 }
 
-/*
-#exercises{
-    clear: left;
-    border-top: 1px solid #000;
-    border-bottom: 1px solid #000;
-    background-color: #f2f2f2;
-    padding: 1% 2%;
-}
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px){
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop{
+        display: block;
+    }
 
-#exercises dt{
-    font-weight: bold;
-}
+    .mobile{
+        display: none;
+    }
 
-#exercises dd{
-    padding: 0.5% 1% 2% 0;
+    /* Tablet Viewport: style rule for header */
+    header{
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li{
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child{
+        border-right: none;
+    }
+
+    nav li a{
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    main ul{
+        margin: 0 0 4% 10%;
+    }
+
+    #exercises{
+        clear: left;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        background-color: #f2f2f2;
+        padding: 1% 2%;
+    }
+
+    #exercises dt{
+        font-weight: bold;
+    }
+
+    #exercises dd{
+        padding: 0.5% 1% 2% 0;
+    }
+
+    .tel-num{
+        font-size: 1.25em;
+    }
+
+    .map{
+        width: 600px;
+        height: 450px;
+    }
+
+} /* end tablet media query screen here */
+
+/* Media query for Desktop Viewport */
+@media screen and (min-width: 769px){
+    /* Desktop Viewport: Style rule for header */
+    header{
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav{
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul{
+        text-align: right;
+    }
+
+    nav li{
+        border: none;
+    }
+
+    nav li a{
+        padding: 0.5em 1em;
+    }
+
+    /* Desktop Viewport: Style rules for main area */
+    main{
+        clear: left;
+    }
+
 }
-*/
