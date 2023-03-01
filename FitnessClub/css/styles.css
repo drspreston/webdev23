@@ -151,7 +151,7 @@ footer p a {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px){
+@media screen and (min-width: 630px), print{
     /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
     .tablet-desktop{
         display: block;
@@ -191,6 +191,7 @@ footer p a {
         clear: left;
         border-top: 1px solid #000;
         border-bottom: 1px solid #000;
+        background: linear-gradient(to right, #ccc, #fff);
         background-color: #f2f2f2;
         padding: 1% 2%;
     }
@@ -215,7 +216,7 @@ footer p a {
 } /* end tablet media query screen here */
 
 /* Media query for Desktop Viewport */
-@media screen and (min-width: 769px){
+@media screen and (min-width: 1015px), print{
     /* Desktop Viewport: Style rule for header */
     header{
         width: 25%;
@@ -242,9 +243,49 @@ footer p a {
         padding: 0.5em 1em;
     }
 
+    nav li a:hover{
+        color: #000;
+        background-color: #fff;
+        border-radius: 50px;        
+    }
+
     /* Desktop Viewport: Style rules for main area */
     main{
         clear: left;
     }
 
+    main h1{
+        font-size: 1.8em;
+    }
+
+    #weights, #cardio, #training{
+        width: 29%;
+        float: left;
+        margin: 0 2%;
+    }
+
+    #exercises{
+        clear: left;
+    }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px){
+    
+    #container{
+        width: 1920px;
+        margin: 0 auto;        
+    }
+}
+
+/* Media query for Print */
+@media print{
+    body{
+        background-color: #fff;
+        color: #000;
+    }
+
+    nav li a{
+        color: #000;
+    }
 }
