@@ -1,0 +1,152 @@
+/*
+  Student Name: Silvia Preston
+	File Name: styles.css
+	Current Date: 03/06/2023
+*/
+
+/* CSS reset */
+body, header, nav, main, footer, img, h1, h3, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body and images */
+body {
+    background: linear-gradient(#e5e0fa, #29157e);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Styles for Mobile Layout */
+
+/* Hide tablet-desktop content */
+    .tablet-desktop {
+        display: none;
+    }
+
+/* Style rule for the header */
+header {
+	padding: 2%;
+	color: #110934;
+	text-align: center;
+}
+
+/* Style rules for navigation area */
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+    border: 1px solid #110934;
+    margin: 1%;
+    background-color: #29157e;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+/* Style rules for the main content  */
+main {
+	display: block;
+	font-family: Georgia, "Times New Roman", sans-serif;
+	font-size: 1em;
+	padding: 1em;
+	background-color: #FFFFFF;
+	border-top: solid 0.2em #110934; 
+	border-bottom: solid 0.2em #110934;
+}
+
+/* Style rule for footer */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+    color: #fff;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 488px), print {
+
+    /* Tablet Viewport: Style rule to show tablet-desktop */
+    .tablet-desktop{
+      display: block;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        margin: 0.5%;
+    }
+    
+    nav li a {
+        padding: 0.1em 1em;
+    }
+    
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 769px), print {
+
+    /* Desktop Viewport: Style rules for the header element */
+    header{
+      width: 25%;
+      float: left;
+    }
+ 
+    /* Desktop Viewport: Style rules for nav */
+    nav ul{
+      text-align: right;
+    }
+
+    nav li {
+        border-radius: 0;
+    }
+
+    nav li a {
+        display: inline-block;
+        padding: 0.7em;
+    }
+
+    nav li a:hover{
+      color: #4424d6;
+      background-color: #e5e0fa;
+    }
+
+    /* Desktop Viewport: Style rules for the main content */
+    main {
+        border-style: none;
+        margin-bottom: 1em 0;
+        overflow: auto;
+    }
+
+    .col-content{
+      width: 30%;
+      float: left;
+      padding: 1.5%;
+    }
+
+    /* Desktop Viewport: Style rule for footer */
+    footer {
+        clear: left;
+    }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width: 1441px){
+  #container{
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
