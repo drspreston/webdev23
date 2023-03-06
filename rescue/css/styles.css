@@ -137,3 +137,64 @@ footer a {
     color: #f6eee4;
     text-decoration: none;
 }
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px), print{
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk{
+    display: block;
+  }
+
+  .mobile{
+    display: none;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li{
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+  }
+
+  nav li a{
+    padding: 0.5em;
+  }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px), print{
+  /* Desktop Viewport: Style rules for nav area */
+  nav li{
+    font-size: 1.5em;
+  }
+  nav li a{
+    padding: 0.5em 1.5em;
+
+  }
+  nav li a:hover{
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  #info ul{
+    margin-left: 5%;
+  }
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px){
+  body{
+    background: linear-gradient(#f6eee4, #78593a);
+  }
+
+  #wrapper{
+    width: 1920px;
+    margin: 0 auto;
+  }
+  
+  main{
+    background-color: #f6eee4;
+  }
+}
