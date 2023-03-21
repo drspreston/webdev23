@@ -5,7 +5,7 @@
 */
 
 /*Reset CSS styles*/
-body, header, nav, main, footer, h1, div, img, ul{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption{
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,12 +21,15 @@ img{
     display: block;
 }
 
+/* Style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
 /* Style rules for mobile viewport */
 
 /* Style rule for header */
 header{
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     background-color: #000;
     height: 190px;
@@ -73,11 +76,16 @@ nav li a{
     display: none;
 }
 
+/* Style rules for the main content */
 main{
     background-color: #fff;
     padding: 2%;
     font-size: 1.15em;
     font-family: "Roboto Slab", serif;
+}
+
+.mobile h3{
+    text-shadow: 5px 5px 8px #ccc;
 }
 
 .tel-link{
@@ -102,6 +110,28 @@ main{
 .action{ 
     font-size: 1.35em;
     color: #666600;
+    font-weight: bold;
+    text-shadow: 5px 5px 8px #ccc;
+}
+
+.frame{
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text{
+    /* the following two rules will allow the figcaption text to overlay
+    at the bottom of the image */
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
@@ -163,7 +193,6 @@ footer p a {
 
     /* Tablet Viewport: style rule for header */
     header{
-        position: static;
         padding-bottom: 2%;
     }
 
@@ -185,6 +214,17 @@ footer p a {
     /* Tablet Viewport: Style rules for main content area */
     main ul{
         margin: 0 0 4% 10%;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    .pic-text{
+        font-size: 1em;
+        padding: 10px;
     }
 
     #exercises{
@@ -256,6 +296,20 @@ footer p a {
 
     main h1{
         font-size: 1.8em;
+    }
+
+    .pic-text{
+        font-size: 1.5em;
+        padding: 20px;
+    }
+
+    .frame{
+        opacity: 0.9;
+    }
+
+    .frame:hover{
+        opacity: 1;
+        box-shadow: 8px 8px 10px #808080;
     }
 
     #weights, #cardio, #training{
