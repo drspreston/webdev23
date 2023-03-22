@@ -5,7 +5,8 @@
 */
 
 /*Reset CSS styles*/
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption{
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption,
+    section, article, aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -86,6 +87,26 @@ main{
 
 .mobile h3{
     text-shadow: 5px 5px 8px #ccc;
+}
+
+article{
+    padding: 2%;
+}
+
+article h3{
+    text-align: center;
+}
+
+article img{
+    margin: 0 auto;
+}
+
+article ul{
+    margin-left: 10%;
+}
+
+article:nth-of-type(2){
+    background-color: rgba(204, 204, 204, 0.3);
 }
 
 .tel-link{
@@ -227,6 +248,22 @@ footer p a {
         padding: 10px;
     }
 
+    aside{
+        text-align: center;
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(204, 204, 204, 0.3);
+        box-shadow: 5px 5px 8px #000;
+        text-shadow: 5px 5px 5px #b3b3b3;
+        border-radius: 0 15px;
+    }
+
+    .grid-item4{
+        grid-column: 1 / span 3;
+    }
+
     #exercises{
         clear: left;
         border-top: 1px solid #000;
@@ -296,6 +333,10 @@ footer p a {
 
     main h1{
         font-size: 1.8em;
+    }
+
+    article h3{
+        font-size: 1.75em;
     }
 
     .pic-text{
