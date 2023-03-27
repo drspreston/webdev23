@@ -290,6 +290,35 @@ footer p a {
         height: 450px;
     }
 
+    /* Tablet Viewport: Style rules for table */
+    table{
+        border: 1px solid #000;
+        border-collapse: collapse;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td{
+        border: 1px solid #000;
+        padding: 2%;
+    }
+
+    th{
+        background-color: #000;
+        color: #fff;
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd){
+        background-color: #ccc;
+    }
+
 } /* end tablet media query screen here */
 
 /* Media query for Desktop Viewport */
