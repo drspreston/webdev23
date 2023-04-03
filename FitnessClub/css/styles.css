@@ -6,7 +6,7 @@
 
 /*Reset CSS styles*/
 body, header, nav, main, footer, h1, div, img, ul, figure, figcaption,
-    section, article, aside {
+    section, article, aside, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -17,9 +17,13 @@ body {
     background-color: #000;
 }
 
-img{
+img, video{
     max-width: 100%;
-    display: block;
+    display: block;    
+}
+
+video{
+    margin: 0 auto 4%;
 }
 
 /* Style rule for box sizing applies to all elements */
