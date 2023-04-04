@@ -151,3 +151,9 @@ div#wc_output aside#wc_cloud span {
    margin: 0px 4px;
 }
 
+div p{
+   background-color: blanchedalmond;
+   margin: 0 auto;
+   padding: 10px 0;
+}
+
