@@ -32,7 +32,6 @@ video{
 }
 
 /* Style rules for mobile viewport */
-
 /* Style rule for header */
 header{
     top: 0;
@@ -44,40 +43,30 @@ header img{
     margin: 0 auto;
 }
 
-/* style rules for navigation area */
-nav{
-    padding: 1%;
-    margin-bottom: 1%;
-}
-
-nav ul{
-    list-style-type: none; /*no bullet on my list items*/
-    text-align: center;
-}
-
-nav li{
-    font-size: 1.5em;
-    font-family: "Francois One", sans-serif;
-    border-top: 1px solid #ffffff;
-}
-
-nav li:first-child{
-    border-top: none;
-}
-
-nav li a{
-    display: block;
+/* style rules for hamburger menu */
+.mobile-nav a{
     color: #fff;
-    padding: 0.5em 1em; /*top-bottom: 0.5 em, left-right: 1em */
-    text-decoration: none; /*remove underline from link*/
+    font-family: 'Francois One', sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
 
-/* Show mobile class, hide tablet-desktop class */
+.mobile-nav a.menu-icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* line 60 in the book - Show mobile class, hide tablet-desktop class and menu-links id */
 .mobile{
     display: block;
 }
 
-.tablet-desktop{
+.tablet-desktop, #menu-links{
     display: none;
 }
 
@@ -248,7 +237,7 @@ footer p a {
         display: block;
     }
 
-    .mobile{
+    .mobile, .mobile-nav{ /*hamburger icon does not display on a tablet viewport */
         display: none;
     }
 
@@ -258,7 +247,19 @@ footer p a {
     }
 
     /* Tablet Viewport: Style rules for nav area */
+    nav{
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    
+    nav ul{
+        list-style-type: none; /*no bullet on my list items*/
+        text-align: center;
+    }
+
     nav li{
+        font-size: 1.5em;
+        font-family: "Francois One", sans-serif;
         border-top: none;
         display: inline-block;
         border-right: 1px solid #fff;
@@ -268,8 +269,11 @@ footer p a {
         border-right: none;
     }
 
-    nav li a{
-        padding: 0.1em 0.75em;
+    nav li a{ /*line 267 in the book */
+        padding: 0.1em 0.75em;        
+        display: block;
+        color: #fff;
+        text-decoration: none; /*remove underline from link*/        
     }
 
     /* Tablet Viewport: Style rules for main content area */
@@ -367,6 +371,28 @@ footer p a {
 
 } /* end tablet media query screen here */
 
+/* Tablet Viewport: Animation */
+@-webkit-keyframes text-animation{ /*support for Safari browser */
+    0% {font-size: 1em;}
+    50% {font-size: 2em;}
+    100% {font-size: 1.35em;}
+}
+
+@keyframes text-animation{
+    0% {font-size: 1em;}
+    50% {font-size: 2em;}
+    100% {font-size: 1.35em;}
+}
+
+figcaption{
+    -webkit-animation-name: text-animation;
+    animation-name: text-animation;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
 /* Media query for Desktop Viewport */
 @media screen and (min-width: 1015px), print{
     /* Desktop Viewport: Style rule for header */
@@ -398,7 +424,8 @@ footer p a {
     nav li a:hover{
         color: #000;
         background-color: #fff;
-        border-radius: 50px;        
+        border-radius: 50px; /*optional*/
+        transform: scale(1.3);      
     }
 
     /* Desktop Viewport: Style rules for main area */
@@ -426,6 +453,7 @@ footer p a {
     .frame:hover{
         opacity: 1;
         box-shadow: 8px 8px 10px #808080;
+        transform: translateY(10px);
     }
 
     #weights, #cardio, #training{
