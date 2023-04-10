@@ -19,6 +19,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -117,20 +119,30 @@
                         strength and endurance. Begin in a standing position, drop 
                         into a squat and extend your hands forward, kick your feet 
                         back and then forward again quickly, and then jump up from a 
-                        squatted position. </dd>
+                        squatted position. 
+                        <span class="viewex" onclick="burpees()">View Example</span></dd>
                 	
                 	<dt>Plank</dt>
                 	<dd>Planks build your core strength. To perform a plank, get 
                         in a push-up position and rest your forearms on the floor. 
-                        Hold the position as long as you can. </dd>
+                        Hold the position as long as you can. 
+                        <span class="viewex" onclick="plank()">View Example</span></dd>
                 	
                 	<dt>Mountain Climber</dt>
                 	<dd>Mountain climbers are a good cardio exercise. Place your 
                         hands on the floor in a push-up position, bring one knee 
                         up to your chest, and then switch as quickly as you can 
-                        (as though you are climbing a mountain).</dd>
+                        (as though you are climbing a mountain).
+                        <span class="viewex" onclick="mountain()">View Example</span></dd>
                 </dl>
-                	
+                
+                <video controls id="example">
+                    <source id="vid-src" src="vid" type="video/mp4">
+                    <track id="despsrc" src="des" kind="description"
+                            srclang="en" label="English Descriptions">
+                    <p>Your browser does not support the video element</p>
+                </video>
+                
                 <p>For more information about how to stay active, 
                    visit the <a href="https://www.hhs.gov/fitness/be-active/index.html" 
                    target="_blank" class="external-link">U.S. Department of Health and Human Services</a>.

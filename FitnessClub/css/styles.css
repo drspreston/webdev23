@@ -165,6 +165,10 @@ article:nth-of-type(2){
 }
 
 /* Contact page styles */
+#contact{
+    text-align: center;
+}
+
 #contact .contact-email-link{
     color: #666600;
     text-decoration: none;
@@ -325,6 +329,15 @@ footer p a {
         padding: 0.5% 1% 2% 0;
     }
 
+    .viewex{
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    #example{
+        display: none;
+    }
+
     .tel-num{
         font-size: 1.25em;
     }
@@ -464,6 +477,11 @@ figcaption{
 
     #exercises{
         clear: left;
+    }
+
+    .offer:hover{
+        /* transform: scale(1.10); */
+        cursor: pointer;
     }
 
     /* Desktop Viewport: Style rules for form elements */
